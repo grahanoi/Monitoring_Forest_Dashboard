@@ -9,8 +9,6 @@ This project focuses on quantifying, analyzing, and assessing the results of NDV
   - `visualization.py`: Script to generate visualizations from the processed data.
 - **dashboard/**: Contains the Streamlit app for the interactive dashboard.
   - `dashboard.py`: Main script to run the Streamlit dashboard.
-- **images/**: Directory for storing generated images for the README and documentation.
-  - `ndvi_comparison_plot.png`: Comparison plot of NDVI across seasons.
 - **README.md**: Project documentation.
 - **requirements.txt**: List of Python dependencies.
 
