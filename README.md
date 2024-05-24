@@ -27,6 +27,12 @@ This project focuses on quantifying, analyzing, and assessing the results of NDV
 
 3. Install the required dependencies:
     ```sh
+    python                    3.12.3
+    matplotlib                3.8.4
+    streamlit                 1.32.0
+    folium                    0.14.0
+    streamlit-folium          0.20.0
+    rasterio                  1.2.10
     pip install -r requirements.txt
     ```
 
