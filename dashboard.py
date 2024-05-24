@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import folium
@@ -40,18 +39,21 @@ st.header("Seasonal NDVI Images")
 
 # Function to display GeoTIFF images
 def display_geotiff(file_path):
-    with rasterio.open(file_path) as src:
-        fig, ax = plt.subplots(figsize=(10, 10))
-        show(src, ax=ax)
-        plt.title(f"NDVI Image: {file_path}")
-        st.pyplot(fig)
+    try:
+        with rasterio.open(file_path) as src:
+            fig, ax = plt.subplots(figsize=(10, 10))
+            show(src, ax=ax)
+            plt.title(f"NDVI Image: {file_path}")
+            st.pyplot(fig)
+    except Exception as e:
+        st.error(f"Error opening file {file_path}: {e}")
 
 # Display images for each season
 seasons = ["Spring", "Summer", "Autumn", "Winter"]
 for season in seasons:
     st.subheader(f"{season} NDVI")
-    # Assuming you have the GeoTIFF files named accordingly
-    geotiff_path = f"data/{season.lower()}_ndvi.tif"
+    # Adjusted paths for GeoTIFF files
+    geotiff_path = f"Health_Wollishofen_Forest/Median_NDVI_{season}_2023.tif"
     display_geotiff(geotiff_path)
 
 # Folium map for NDVI visualization
