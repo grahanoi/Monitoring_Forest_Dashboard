@@ -55,7 +55,7 @@ st.markdown("## 🗣 Play me: ⬇")
 st.audio(os.path.join(base_dir, 'data', 'audio', 'INtroduction.pdf_pages_1_to_1.mp3'))
 
 # Title and introduction
-st.title("🌳 Forest Health Monitoring with NDVI Analysis")
+st.title("🌳 Forest Health Monitoring")
 st.markdown("### 🌱 Seasonal NDVI analysis of forest health in Wollishofen using Sentinel-2 satellite imagery.")
 
 # Folium map for NDVI visualization
