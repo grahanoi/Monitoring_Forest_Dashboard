@@ -50,12 +50,12 @@ stats_df = pd.DataFrame({
     'Median NDVI': [mean_stats[1], spring_stats[1], summer_stats[1], autumn_stats[1], winter_stats[1]]
 })
 
-st.markdown("## 🗣 Play me: ⬇")
-# Embed the audio recording
-st.audio(os.path.join(base_dir, 'data', 'audio', 'INtroduction.pdf_pages_1_to_1.mp3'))
 
 # Title and introduction
 st.title("🌳 Forest Health Monitoring")
+st.markdown("## 🗣 Play me: ⬇")
+# Embed the audio recording
+st.audio(os.path.join(base_dir, 'data', 'audio', 'INtroduction.pdf_pages_1_to_1.mp3'))
 st.markdown("### 🌱 Seasonal NDVI analysis of forest health in Wollishofen using Sentinel-2 satellite imagery.")
 # Insert the GIF
 st.image(os.path.join(base_dir, 'data', 'images', 'Sentinel-2_composites.png'), caption='Sentinel-2 Satellite')
