@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import folium
 from streamlit_folium import st_folium
-import rasterio
 from rasterio.plot import show
 import pandas as pd
 import seaborn as sns
