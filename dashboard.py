@@ -57,7 +57,12 @@ st.audio(os.path.join(base_dir, 'data', 'audio', 'INtroduction.pdf_pages_1_to_1.
 # Title and introduction
 st.title("🌳 Forest Health Monitoring")
 st.markdown("### 🌱 Seasonal NDVI analysis of forest health in Wollishofen using Sentinel-2 satellite imagery.")
-
+# Insert the GIF
+st.image(os.path.join(base_dir, 'data', 'images', 'Sentinel-2_composites.png'), caption='Sentinel-2 Satellite')
+# Add NDVI definition
+st.markdown("""
+**NDVI**: The Normalized Difference Vegetation Index (NDVI) is a numerical indicator that uses the visible and near-infrared bands of the electromagnetic spectrum to analyze remote sensing measurements and assess whether the target being observed contains live green vegetation or not.
+""")
 # Folium map for NDVI visualization
 st.header("🌍 Interactive Map")
 st.audio(os.path.join(base_dir, 'data', 'audio', 'interatice_map.pdf_pages_1_to_1.mp3'))
