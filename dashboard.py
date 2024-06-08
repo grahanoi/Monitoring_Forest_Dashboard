@@ -160,5 +160,8 @@ st.markdown("""
 - The high NDVI in summer aligns with expected vigorous growth.🌿
 - Low NDVI in winter suggests typical dormancy or leaf-off conditions.💤
 - Identified deviations can indicate areas of concern requiring further investigation.🚨
+            
+### Author: [Noirin Graham](https://github.com/grahanoi)
+            [Felix Pascal]
 """)
 
