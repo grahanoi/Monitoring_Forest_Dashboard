@@ -162,6 +162,6 @@ st.markdown("""
 - Identified deviations can indicate areas of concern requiring further investigation.🚨
             
 ### Author: [Noirin Graham](https://github.com/grahanoi)
-### Author:[Felix Pascal](https://github.zhaw.com/felixpas)
+### Author: [Felix Pascal](https://github.zhaw.com/felixpas)
 """)
 
