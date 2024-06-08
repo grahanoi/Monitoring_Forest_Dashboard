@@ -96,7 +96,7 @@ st.markdown("""
 1. **Data Acquisition**: Accessed Sentinel-2 imagery.
 2. **AOI Definition**: Defined study area near Wollishofen.
 3. **Processing**:
-   - Filtered images with <20% cloud cover.
+   - Filtered images with < 20% cloud cover.
    - Calculated and aggregated seasonal NDVI.
 4. **Visualization**: Used GEE, QGIS, and Python.
 """)
@@ -115,7 +115,7 @@ image_paths = [
 titles = ["Mean", "Spring", "Summer", "Autumn", "Winter"]
 
 # Display processed images
-fig_processed, axs = plt.subplots(1, len(image_paths), figsize=(20, 10))
+fig_processed, axs = plt.subplots(1, len(image_paths), figsize=(25, 15))
 for ax, img_path, title in zip(axs, image_paths, titles):
     img = mpimg.imread(img_path)
     ax.imshow(img)
@@ -142,7 +142,9 @@ plt.title('Median NDVI by Season')
 st.pyplot(fig_median)
 
 # Analysis and Insights
-st.header("🔍 Analysis and Insights")
+st.header("Summary and Thanks 🌳🌞🍂❄️")
+st.audio(os.path.join(base_dir, 'data', 'audio', 'end.pdf_pages_1_to_1.mp3'))
+
 st.markdown("""
 ### Key Findings:
 - **Summer** shows the highest mean NDVI, indicating peak vegetation health.🌞
@@ -154,5 +156,3 @@ st.markdown("""
 - Identified deviations can indicate areas of concern requiring further investigation.🚨
 """)
 
-st.header("Summary and Thanks 🌳🌞🍂❄️")
-st.audio(os.path.join(base_dir, 'data', 'audio', 'end.pdf_pages_1_to_1.mp3'))
