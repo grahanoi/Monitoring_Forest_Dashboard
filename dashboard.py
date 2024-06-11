@@ -63,6 +63,7 @@ st.markdown("""🌐https://learn.opengeoedu.de/fernerkundung/vorlesung/copernicu
 # Add NDVI definition
 st.markdown("""
 **What is NDVI?**
+
 The Normalized Difference Vegetation Index (NDVI) is a numerical indicator that uses the visible and near-infrared bands of the electromagnetic spectrum to analyze remote sensing measurements and assess whether the target being observed contains live green vegetation or not.
 
 **Why is NDVI Important?**
