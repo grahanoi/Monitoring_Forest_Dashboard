@@ -62,7 +62,13 @@ st.image(os.path.join(base_dir, 'data', 'images', 'Sentinel-2_composites.png'), 
 st.markdown("""🌐https://learn.opengeoedu.de/fernerkundung/vorlesung/copernicus/Sentinel-2-Teil-1""")
 # Add NDVI definition
 st.markdown("""
-**NDVI**: The Normalized Difference Vegetation Index (NDVI) is a numerical indicator that uses the visible and near-infrared bands of the electromagnetic spectrum to analyze remote sensing measurements and assess whether the target being observed contains live green vegetation or not.
+**What is NDVI?**
+The Normalized Difference Vegetation Index (NDVI) is a numerical indicator that uses the visible and near-infrared bands of the electromagnetic spectrum to analyze remote sensing measurements and assess whether the target being observed contains live green vegetation or not.
+
+**Why is NDVI Important?**
+- **Monitoring Vegetation Health**: NDVI helps in monitoring the health and vigor of vegetation, essential for agriculture and forestry.
+- **Drought Assessment**: It assists in identifying drought-affected areas, aiding in drought management and mitigation efforts.
+- **Land Cover Classification**: NDVI is used in classifying land cover types, distinguishing between vegetation, water bodies, and bare soil.
 """)
 # Folium map for NDVI visualization
 st.header("🌍 Interactive Map")
